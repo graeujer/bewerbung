@@ -44,8 +44,9 @@
 .start__content-right {
   margin-left: auto;
   margin-right: auto;
-display:flex;
-align-items:center;}
+  display: flex;
+  align-items: center;
+}
 
 .start__foto-content {
   width: 20rem;
