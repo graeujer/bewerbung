@@ -1,1 +1,570 @@
+/*1200px oder schmaler*/
+/*992px oder schmaler*/
+/*768px oder schmaler*/
+/*576px oder schmaler*/
+.start {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-size: 1rem;
+  background-image: linear-gradient(-72deg, #111B1E 50%, black 50.1%);
+}
 
+.start__content-left {
+  width: 50vw;
+  height: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+
+.start__heading {
+  padding-top: 8rem;
+  color: white;
+  font-size: 4.5rem;
+  line-height: 2.85rem;
+  font-family: "Bebas Neue";
+}
+.start__heading--orange {
+  color: #FA622D;
+  font-size: 5.5rem;
+  padding-left: 0;
+  padding-top: 1rem;
+}
+
+.start__heading-sub {
+  color: white;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  padding-bottom: 5rem;
+  font-family: "Libre Baskerville";
+}
+
+.start__content-right {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.5%;
+}
+
+.start__foto-content {
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 0 0 20px black;
+  background-image: url(../images/foto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% center;
+}
+
+.about {
+  background-color: #111B1E;
+  width: 100%;
+  padding-bottom: 3rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about__heading {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Bebas Neue";
+}
+
+.about__heading-sub {
+  color: #FA622D;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: -1.2rem;
+  font-family: "Libre Baskerville";
+}
+
+.about__content {
+  display: flex;
+  padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  /* 990px*/
+}
+@media (max-width: 62em) {
+  .about__content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.about__content-left {
+  padding: 2rem;
+  width: 30rem;
+  height: 20rem;
+  background-color: black;
+  border-radius: 25px;
+  margin-left: 4rem;
+}
+@media (max-width: 75em) {
+  .about__content-left {
+    justify-content: center;
+  }
+}
+
+.about__content-items {
+  padding-bottom: 1.5rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+.about__icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.about__icon-container--calendar {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.about__content-items-text {
+  color: white;
+  padding-top: 0.5rem;
+  padding-left: 0.8rem;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Cabin";
+}
+
+.about__content-right {
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+.about__content-right-text {
+  color: white;
+  background-color: black;
+  width: 40rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: transform 0.5s ease-in-out;
+  font-family: "Cabin";
+}
+.about__content-right-text--orange {
+  color: #FA622D;
+  font-weight: 800;
+  font-size: 1.05rem;
+  padding-right: 0.7rem;
+}
+.about__content-right-text:hover {
+  transform: scale(1.1);
+}
+
+.skills {
+  background-color: black;
+  padding-bottom: 3rem;
+  height: 100vh;
+  font-size: 1rem;
+}
+@media (max-width: 75em) {
+  .skills {
+    height: 100%;
+  }
+}
+
+.skills__heading {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Bebas Neue";
+}
+
+.skills__heading-sub {
+  color: #FA622D;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: -1.2rem;
+  padding-bottom: 2rem;
+  font-family: "Libre Baskerville";
+}
+
+.skills-icon-bg {
+  background-color: #111B1E;
+  border-radius: 999999px;
+  width: 5rem;
+  padding: 1rem;
+  height: 5rem;
+  margin-right: 2rem;
+  position: relative;
+  font-size: 1rem;
+}
+.skills-icon-bg--udemy {
+  padding: 0.5rem;
+}
+.skills-icon-bg--hidden {
+  background-color: black;
+  margin-right: 3.35rem;
+}
+
+.skills__content-card {
+  display: flex;
+  margin-right: 8rem;
+  padding-bottom: 3rem;
+}
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+}
+
+.skills__content-right {
+  display: flex;
+}
+.skills__content-right--udemy {
+  flex: 1 0 17rem;
+}
+
+.skills__card-text-content {
+  display: flex;
+}
+.skills__card-text-content--udemy {
+  display: block;
+}
+
+.skills__radio {
+  border: 1px solid gray;
+  border-radius: 99999px;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-left: 0.5rem;
+}
+.skills__radio--filled {
+  background-image: radial-gradient(circle at center, #FA622D 59.9%, transparent 60.3%);
+}
+.skills__radio--first {
+  margin-left: 2rem;
+}
+
+.skills__topic {
+  color: #D5D1CB;
+  font-size: 1.15rem;
+  padding-bottom: 1rem;
+  font-family: "Cabin";
+}
+.skills__topic--hidden {
+  color: black;
+}
+
+.skills__topic-sub {
+  color: white;
+  width: 5rem;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-family: "Cabin";
+}
+.skills__topic-sub--udemy {
+  width: 18rem;
+}
+
+.skills__duration {
+  color: #FA622D;
+  font-size: 1rem;
+  font-family: "Libre Baskerville";
+}
+
+.examples {
+  background-color: #111B1E;
+  padding-bottom: 3rem;
+  height: 50rem;
+}
+@media (max-width: 75em) {
+  .examples {
+    height: 100%;
+  }
+}
+
+.examples__content {
+  display: flex;
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 20rem;
+  height: 22rem;
+  perspective: 1100px;
+  border-radius: 25px;
+  margin: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: black;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+
+.examples__photo {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card__heading {
+  color: #FA622D;
+  font-size: 1.8rem;
+  padding-top: 0.5rem;
+  font-family: "Bebas Neue";
+}
+
+.flip-card-sub {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.contact {
+  background-color: black;
+  height: 100vh;
+  font-size: 1rem;
+}
+@media (max-width: 75em) {
+  .contact {
+    height: 100%;
+  }
+}
+
+.contact__content {
+  display: flex;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.contact__content-right {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-top: 8rem;
+  padding-left: 5rem;
+}
+
+.contact__form {
+  color: #FA622D;
+  padding: 0.5rem;
+  border-radius: 25px;
+  width: 25rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.contact__textarea {
+  width: 30rem;
+  height: 15rem;
+  resize: none;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: #FA622D;
+  font-size: 1rem;
+}
+
+.contact__icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  background-color: #111B1E;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.contact__icon-content {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.contact__link {
+  text-decoration: none;
+  color: #D5D1CB;
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Cabin";
+}
+
+.thanks {
+  background-color: #111B1E;
+  height: 100vh;
+  color: #FA622D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks__heading {
+  font-size: 3.5rem;
+  font-family: "Bebas Neue";
+}
+
+.button {
+  color: #D5D1CB;
+  background-color: #FA622D;
+  padding: 0.5rem 2.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s background-color;
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+  text-align: center;
+  font-family: "Cabin";
+}
+.button:hover {
+  background-color: #ee4206;
+}
+
+.button--about-back {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  width: 10rem;
+}
+
+.button-flipcard {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background-color: #FA622D;
+  color: #D5D1CB;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s background-color;
+  font-family: "Cabin";
+}
+.button-flipcard:hover {
+  background-color: #ee4206;
+}
+
+.button-contact {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background-color: #FA622D;
+  color: #D5D1CB;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s background-color;
+  font-family: "Cabin";
+}
+.button-contact:hover {
+  background-color: #ee4206;
+}
+
+.icons {
+  fill: #FA622D;
+}
+
+.laptop-svg {
+  fill: #211715;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+@media (min-width: 1700px) {
+  * {
+    font-size: 133%;
+  }
+}
+@media (min-width: 1950px) {
+  * {
+    font-size: 150%;
+  }
+}
+@media (min-width: 2200px) {
+  * {
+    font-size: 160%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* 990px*/
+}
+@media (max-width: 75em) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 62em) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
